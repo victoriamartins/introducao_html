@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML na prática</title>
+</head>
+<body>
+    <h1>Primeiro Arquivo no Bootcamp</h1>
+    <hr/>
+    <h2>Bootcamp NTT DATA Diversidade em Tech</h2>
+
+    <p>Este é um desafio de projeto para o bootcamp 
+        <a href="https://web.dio.me/track/ntt-data-diversidade-em-tech" target="_blank">NTT DATA Diversidade em Tech</a> 
+        que estou participando na plataforma
+        <abbr title="Digital Innovation One" style="text-decoration: none;">DIO</abbr>.
+        Nele, estou [re]aprendendo programação web.
+    </p>
+
+    <h3>Conteúdo da página</h3>
+    <ul>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#links">Links</a></li>
+    </ul>
+
+    <section id="textos">
+        <h4>Textos</h4>
+        <p>
+            Existem diversas tags para marcarmos textos em HTML. Para títulos, existe a família de 
+            tags que vai de <strong>h1</strong> (mais relevante) até <strong>h6</strong> (menos relevante).
+        </p>
+        <p>
+            Para os parágrafos de conteúdo, existe a tag <strong>p</strong> e, ao longo do texto escrito 
+            dentro de <strong>p</strong>, é possível utilizar tags que, de alguma forma, diferenciam o conteúdo:
+        </p>
+        <ul>
+            <li>Strong e "b": <b>negrito</b></li>
+            <li>"i": <i>itálico</i></li>
+            <li>"u": <u>sublinhado</u></li>
+            <li>"strike": <strike>riscado</strike> </li>
+        </ul>
+    </section>
+
+    <section id="listas">
+        <h4>Listas</h4>
+        <p>
+            As listas, em HTML, podem ser ordenadas ou não. As listas ordenadas são delimitadas pela tag 
+            <strong>"ol"</strong> enquanto as não ordenadas são delimitadas por <strong>"ul"</strong>. Em ambas,
+            os itens são delimitados por <strong>"li"</strong>, veja:
+        </p>
+        <p>
+            Lista ordenada:
+        </p>
+        <ol>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+        </ol>
+        <p>
+            Lista não ordenada:
+        </p>
+        <ul>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+        </ul>
+        <p>
+            Com estas tags, é possível encadear listas:
+        </p>
+        <ol>
+            <li>
+                Primeiro item
+                <ul>
+                    <li>Primeiro item secundário</li>
+                    <li>Segundo item secundário</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+    <section id="links">
+        <h4>Links</h4>
+        <p>
+            É muito comum que utilizemos links em páginas web. Em HTML isso é feito com a tag <strong>"a"</strong>.
+            Alguns de seus atributos principais são:
+        </p>
+        <ul>
+            <li>
+                <strong>href</strong>: indica o link a ser aberto.
+            </li>
+            <li>
+                <strong>target</strong>: indica onde o link sera aberto. Os principais valores que pode assumir são:
+                <ul>
+                    <li>
+                        <strong>"_blank":</strong> abre em uma nova guia do navegador;
+                    </li>
+                    <li>
+                        <strong>"_self":</strong> abre na guia em que o atual HTML está disposto.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            <a href="https://www.google.com" target="_blank">Neste link</a>, o Google será aberto em uma nova guia. <br>
+            <a href="https://www.google.com" target="_self">Neste link</a>, o Google será aberto na guia atual.
+        </p>
+        <p>
+            Podemos também redirecionar o link para uma seção do próprio website que estamos fazendo.
+        </p>
+        <p>
+            Para isso, atribuímos um <i>id</i> para a seção que redirecionaremos e, no href da tag <strong>a</strong>
+            passamos o valor <b>"#" + id atribuído</b>. <br>
+            Exemplo: a seção "Listas" tem id "listas", portanto, atribuímos <b>href="#listas"</b> a <a href="#listas">este link</a>.
+        </p>
+        <p>
+            Esta técnica é denominada <b>ancoragem</b>!
+        </p>
+    </section>
+</body>
+</html>
